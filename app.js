@@ -31,8 +31,24 @@ const updatePage = async () => {
   // TODO: Use either `map` and/or `filter` to extract some data from the array of fruit objects
   // For example, find "name of all fruits whose sugar > 15",
 
+  const result = fruitsArray.filter(checkFamily);
+  console.log(result)
+
+  function checkFamily(fruit) {
+      return fruit.family === 'Rosaceae';
+  }
+
   // TODO: Create a new HTML element to display your data
 
+  
+  
+const list = document.getElementById("myFruitList");
+  
+result.forEach((item)=>{
+  const li = document.createElement("li");
+  li.innerText = item.name;
+  list.appendChild(li);
+})
   // TODO: Append your new element to the page
 
 }

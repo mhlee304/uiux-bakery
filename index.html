@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebDev Studio</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <title>CS 1300: UI/UX Portfolio</title>
     <!-- import javascript variables and functions -->
     <script src="app.js" defer></script>
     <!-- import CSS styles -->
@@ -10,25 +11,147 @@
 
   <!-- page content goes into <body> -->
   <body>
-    <div id="cs1300-gallery">
-      <h1>Welcome to my bakery</h1>
-      <p>Add your own images and styles!</p>
+    <div id="projects">
+      <div id="project-one">
+        <h1>Yale School of Art Responsive Redesign</h1>
+        <img class="new-yale" src="./main.jpg" alt="New Yale Website">
+        <h2 class="project-section-header">Project Overview</h2>
+        <p class="project-description">This project was for CSCI1300: User Interface and User Interaction focusing on redesigning a simple website.
+          Our task was to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes.
+          I choose to redesign <b >Yale School of Art's <a target="_blank" href="https://www.art.yale.edu/">website</a>.</b>
+        </p>
+        <h2 class="project-section-header"> Part 1: Identifying Usability Problems </h2>
+        <img class="yale-bad" src="./yale-bad.png" alt="Original Yale School of Art Website">        
+        <p class="project-description">
+          I chose this <a target="_blank" href="https://www.art.yale.edu/">website</a> because I was surprised that the Yale School of Art would have such a terrible design. I think they are doing it ironically, but I thought it would be interesting to analyze why I think that this design is bad and find ways to improve it. 
+        </p>
 
-      <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
-      <div class="gallery-container">
-        <img class="gallery-item" src="./assets/jeff.jpg" alt="jeff watching u">
-        <img class="gallery-item" src="./assets/image1.jpeg" alt="this is image 1">
-        <img class="gallery-item" src="./assets/image2.jpeg" alt="this is image 2">
-        <img class="gallery-item" src="./assets/image3.jpeg" alt="this is image 3">
-        <img class="gallery-item" src="./assets/image4.jpeg" alt="this is image 4">
-        <img class="gallery-item" src="./assets/image5.jpeg" alt="this is image 5">
-        <img class="gallery-item" src="./assets/image6.jpeg" alt="this is image 6">
-        <img class="gallery-item" src="./assets/image7.jpeg" alt="this is image 7">
+        <div class="row">
+          <div class="column">
+            <h3>
+              UI/UX Criteria Topics
+            </h3>
+          </div>
+          <div class="column">
+            <h3>Problems in Original Website</h3>
+          </div>
+          <div class="column">
+            <h3>Solutions in Redesign</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <p>Usability</p>
+          </div>
+          <div class="column">
+            <p>
+              Conflicting background colors with font causes eye strain.
+              <br>
+              <br>
+              No indication of what are the quick links are so it is hard to know what they are.
+              <br>
+              <br>
+              No padding within the text block making it very hard to read.
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              Changed background color and font colors to make it more aesthically pleasing.
+              <br>
+              <br>
+              Have an intuitive three-line nav bar that is popular and intuitive for users to click on for links.
+              <br>
+              <br>
+              Added padding within text blocks.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <p>Learnability</p>
+          </div>
+          <div class="column">
+            <p> Hard to navigate the page because the website is very disorganized and not intuitive.
+              <br>
+              <br>
+              Learning that the Quick Links is a drop down is very untuitive.
+              <br>
+              <br>
+              Very hard to learn that the Community Billboard allows students to post their latest work since there is only one artwork currently posted. 
+            </p>
+          </div>
+          <div class="column">
+            <p> Have explicit changes in appearances to indicate different sections. For example change in background color. 
+              <br>
+              <br>
+              Have a 3-line navigation bar that is intuitive for users to click on the top left. 
+              <br>
+              <br>
+              Have several students' past works on display to indicate that the user can post their work too.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <p>Memorability</p>
+          </div>
+          <div class="column">
+            <p> Hard to remember what all the links are in quick links, so have to check whether it is further down the current page, on the left navigation, or in the quick links drop-down. 
+              <br>
+              <br>
+          </div>
+          <div class="column">
+            <p> Have a navigation links on the top and the bottom of the page
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <p>
+          In addition to analyzing the website on the three usability guidelines, I also used WebAIM Wave to detect possible accessibility problems. However, it said that there are no errors in the website, which I am very surprised about.  I thought it would have a lot of accessibility problems due to the bad color choices and the navigational problems. However, according to the WebAIM WAVE, it doesn’t detect any possible accessibility problems. 
+        </p>
+          <!-- PART 2> -->
+
+
+        <h2 class="project-section-header">Part 2: Visual Redesign</h2>
+        <h3>Low Fidelity Wireframing</h3>
+        <p>For this section, I created a low fidelity wireframe that gives a layout on how I would want to redesign the website to solve many of the current issues. (Feel free to navigate in the embedded wireframes)</p>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width=100% height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiGjOZAuQZY1RE1oPSC0wks%2FUIUX-Redesign-Low-Fidelity%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1" allowfullscreen></iframe>
+        <div class="two-devices">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="70.867%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiGjOZAuQZY1RE1oPSC0wks%2FUIUX-Redesign-Low-Fidelity%3Fnode-id%3D55%253A94%26scaling%3Dscale-down%26page-id%3D55%253A5" allowfullscreen></iframe>
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="28%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiGjOZAuQZY1RE1oPSC0wks%2FUIUX-Redesign-Low-Fidelity%3Fnode-id%3D55%253A193%26scaling%3Dscale-down%26page-id%3D55%253A191" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h3>Visual Design Guide</h3>
+        <p>For this section, I decided on the colors, typography, and images I would want for the High Fidelity Wireframe.</p>
+        <img src="./visual-design-guide.jpg" width="100%" alt="Persona 1: Connor, a first-time user with the Panini Press">
+        <h3>High Fidelity Wireframing</h3>
+        <p>Based on the same layout from the low fidelity wireframe and the visual design guide, I then created a more detailed layout with the specific colors, typography, and images that I would want in my HTML/CSS website. (Feel free to navigate in the embedded wireframes)</p>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOf8Ta0FT88UfaaNyrUrqTi%2FUIUX-Redesign-HiFi%3Fnode-id%3D150%253A209%26scaling%3Dscale-down%26page-id%3D150%253A208" allowfullscreen></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="70.867%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOf8Ta0FT88UfaaNyrUrqTi%2FUIUX-Redesign-HiFi%3Fnode-id%3D150%253A72%26scaling%3Dscale-down%26page-id%3D150%253A71" allowfullscreen></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="28%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOf8Ta0FT88UfaaNyrUrqTi%2FUIUX-Redesign-HiFi%3Fnode-id%3D150%253A146%26scaling%3Dscale-down%26page-id%3D150%253A145" allowfullscreen></iframe>
+        
+        <h2 class="project-section-header">Part 3: Responsive Redesign</h2>
+        <p>For this section, I used the Hi-Fi Wireframing as a layout for the website that I made in HTML and CSS. Below is the screenshots of the website and the link to the website can be found <a target="_blank" href="https://groovylynx123.github.io/yale-school-of-art/">here</a>.</p>
+        <img class="new-yale" src="./website-1.png" alt="New Yale Website 1">
+        <img class="new-yale" src="./website-2.png" alt="New Yale Website 2">
+        <img class="new-yale" src="./website-3.png" alt="New Yale Website 3">
+        <img class="new-yale" src="./website-4.png" alt="New Yale Website 4">
+        <img class="new-yale" src="./website-5.png" alt="New Yale Website 5">
+
+
+        <h2 class="project-section-header">Key Takeaways</h2>
+        <p>From this project, I learned how to identify flaws within a current website, identify its core problems, and ideate its potential solutions. From these proposed solutions,
+          I was able to create low-fidelity and high-fidelity prototypes for various device dimensions. I was also able to create a responsive redesign of a website using HTML and CSS.</p>
       </div>
 
-      <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
-      <!-- <button onclick="updatePage()">Press this button to display some fruit data</button> -->
     </div>
   </body>
+  <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1500" height="600" src="https://groovylynx123.github.io/yale-school-of-art/" allowfullscreen></iframe> -->
+
+
 
 </html>
